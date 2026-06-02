@@ -1,0 +1,33 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "mapEngine": {
+    "maxZoom": 20,
+    "minZoom": 0,
+    "tileSize": 256,
+    "cacheSize": 1000,
+    "projections": ["EPSG:4326", "EPSG:3857"]
+  },
+  "serviceManager": {
+    "checkInterval": 30000,
+    "maxRetries": 3,
+    "retryDelay": 1000,
+    "timeout": 5000
+  },
+  "monitor": {
+    "interval": 60000,
+    "enableAlerts": true,
+    "alertThresholds": {
+      "cpuUsage": 80,
+      "memoryUsage": 85,
+      "errorRate": 5,
+      "responseTime": 1000,
+      "cacheHitRate": 50
+    }
+  },
+  "logging": {
+    "level": "info"
+  }
+}
